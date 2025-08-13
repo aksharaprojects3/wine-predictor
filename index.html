@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine Quality Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1>🍷 Wine Quality Predictor</h1>
+  </nav>
+
+  <main>
+    <form id="wineForm">
+      <label>Alcohol: <input type="number" step="any" name="alcohol" required></label>
+      <label>Malic Acid: <input type="number" step="any" name="malic_acid" required></label>
+      <label>Ash: <input type="number" step="any" name="ash" required></label>
+      <label>Alcalinity of Ash: <input type="number" step="any" name="alcalinity_of_ash" required></label>
+      <label>Magnesium: <input type="number" step="any" name="magnesium" required></label>
+      <label>Total Phenols: <input type="number" step="any" name="total_phenols" required></label>
+      <label>Flavanoids: <input type="number" step="any" name="flavanoids" required></label>
+      <label>Non-Flavanoid Phenols: <input type="number" step="any" name="nonflavanoid_phenols" required></label>
+      <label>Proanthocyanins: <input type="number" step="any" name="proanthocyanins" required></label>
+      <label>Color Intensity: <input type="number" step="any" name="color_intensity" required></label>
+      <label>Hue: <input type="number" step="any" name="hue" required></label>
+      <label>OD280/OD315: <input type="number" step="any" name="od280_od315" required></label>
+      <label>Proline: <input type="number" step="any" name="proline" required></label>
+
+      <button type="submit">Predict Quality</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
